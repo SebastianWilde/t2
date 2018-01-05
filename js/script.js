@@ -9,7 +9,7 @@ function moveForward (){
     for (var i=0;i < figures.length;i++)
     {
         if(figures[i].className == 'visible'){
-            figures[i].className ='';
+            figures[i].className ='noVisible';
             pointer = i;
         }
     }
