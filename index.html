@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
@@ -7,16 +7,17 @@
     <meta name="author" content="Sebastian Wilde Alarcon Arenas">
     <meta name="description" content="Contoso News, the only source for news">
     <meta name="keywords" content="news,alerts,health,business,finance">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Contoso News</title>
 </head>
-<body>
+<body class="container">
 
     <header>
         <h1>Contoso News:</h1>
         <h2>On Time, On Topic.</h2>
     </header>
-    <section id="carousel">
+    <!-- <section id="carousel" class="container carousel slide" data-ride="carousel">
         <figure class="visible">
             <img src="img/efficient_cars.png"  alt="Efficient Cars">
             <figcaption>2017 Cars Promise to be More Fuel Efficient Than Ever</figcaption>
@@ -29,7 +30,21 @@
             <img src="img/health_records.png"  alt="Health Records">
             <figcaption>Many Doctors are Moving to Digital Health Records This Year</figcaption>
         </figure>
-    </section>
+    </section> -->
+    <div class="carousel-inner" role="listbox">
+        <figure class="item active">
+            <img src="img/efficient_cars.png" alt="Efficient Cars" />
+            <figcaption class="carousel-caption">2017 Cars Promise to be More Fuel Efficient Than Ever</figcaption>
+        </figure>
+        <figure class="item">
+            <img src="img/natural_disaster.png" alt="Natural Disaster" />
+            <figcaption class="carousel-caption">Hurricane Threatens to Touch Down on the East Coast This Weekend</figcaption>
+        </figure>
+        <figure class="item">
+            <img src="img/health_records.png" alt="Health Records" />
+            <figcaption class="carousel-caption">Many Doctors are Moving to Digital Health Records This Year</figcaption>
+        </figure>
+    </div>
     <nav>
         <h3>Navigation</h3>
         <ul>
@@ -79,9 +94,9 @@
                         target="_blank">Microsoft Learning News</a>
                 </li>
         </ul>
-        <h4>Sing Up For Our Emails</h4>
-        <summary>
-            <form>
+        <summary class="panel panel-default">
+            <div class="panel-heading"> Sing Up For Our Emails</div>
+            <form class="form-horizontal panel-body">
                 <label>E-mail Address: </label>
                 <input type="email" required="required">
                 <label>Delivery Preference: </label>
@@ -94,9 +109,9 @@
             </form>
         </summary>
     </nav>
-    <main>
+    <main class="container row">
         <h3>Latest Aritcles</h3>
-        <article>
+        <article class="well col-md-4">
             <time datetime="16-01-2016">Friday, Jan 16</time>
             <h4>International Story</h4>
             <p>
@@ -110,7 +125,7 @@
                 <a href="#" target="_blank">Read More ...</a>
             </p>
         </article>
-        <article>
+        <article class="well col-md-4">
             <time datetime="14-01-2016">Wednesday, Jan 14</time>
             <h4>Finance Story</h4>
             <p>
@@ -122,7 +137,7 @@
                 quis. Nulla fringilla viverra turpis in volutpat. Cras vel orci quis velit efficitur ullamcorper sed eu
                 ex.
             <figure>
-                <img src="img/chip_debit.png" alt="Debit Card with Chip">
+                <img src="img/chip_debit.png" alt="Debit Card with Chip" class="img-responsive">
                 <figcaption>New Debit Cards with Chip-Based Security</figcaption>
             </figure>
             <p>
@@ -134,7 +149,7 @@
                 <a href="#" target="_blank">Read More ...</a>
             </p>
         </article>
-        <article>
+        <article class="well col-md-4">
             <time datetime="14-01-2016">Wednesday, Jan 14</time>
             <h4>Technology Story</h4>
             <p>
@@ -150,6 +165,15 @@
     </main>
     <aside>
         <em>Advertisement</em>
+        <h4>Morph</h4>
+        <p>
+            Learn how to use the latest transition in <strong>Microsoft PowerPoint 2016</strong>!
+        </p>
+        <video autoplay="autoplay" loop="loop" controls="controls">
+            <source src="ad/ppt_ad.webm" type="video/webm">
+            <source src="ad/ppt_ad.ogv" type="video/ogg" >
+            <source src="ad/ppt_ad.mp4" type="video/mp4" />
+        </video>
     </aside>
 </body>
 <footer>
@@ -157,5 +181,7 @@
         Contoso News Conglomerate © 2016
     </p>
 </footer>
-<script type="text/javascript" src="js/script.js"></script>
+<!-- <script type="text/javascript" src="js/script.js"></script> -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type ="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </html>

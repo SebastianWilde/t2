@@ -64,16 +64,12 @@ main{
     src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
 }
 body{
-    font-family: 'News Cycle';
+    font-family: 'News Cycle' !important;
 }
 header{
     font-family: 'Contain One';
 }
-article{
-    margin: 5px 0px;
-    padding: 5px 5px;
-    box-shadow: -1px -1px 6px #888888;
-}
+
 @media print{
     header {
         padding: 0px;
@@ -113,12 +109,12 @@ main{
     }
 }
 
-img {
+/* img {
     width: 50%;
     height: 50%;
-}
+} */
 
-section#carousel {
+/* section#carousel {
     flex: 1  100%;
     background-color: #d1cdcd;;
     color: #242323;
@@ -167,4 +163,30 @@ section#carousel > figure.visible > img,figcaption {
 
 section#carousel > figure > img,figcaption {
     display: block;
+} */
+
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel .item > img {
+    display: inline-block;
+}
+
+@media not print {
+    section#carousel {
+        background-color: #d1cdcd;
+        color: #242323;
+        padding: 5px;
+    }
+}
+
+@media print {
+    section#carousel {
+        display: none;
+    }
+}
+
+aside > video{
+    width: 100%;
 }
